@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:paddingLeft="21dp"
+    android:paddingRight="21dp"
+    android:id="@+id/relativeLayout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.06"
+        android:textColor="@color/backArrow"
+        android:id="@+id/text_login"
+        android:text="Login"
+        android:layout_marginBottom="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_below="@+id/text_login"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_email"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_password"
+                android:textSize="16sp"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:theme="@style/BlueButton"
+            android:text="SIGN IN"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.shaishavgandhi.loginbuttons.FacebookButton
+                android:id="@+id/btn_facebook_sign_in"
+                android:layout_width="55dp"
+                app:roundedCorner="true"
+                app:iconSize="30dp"
+                android:layout_height="55dp" />
+
+            <com.shaishavgandhi.loginbuttons.GoogleButton
+                android:id="@+id/btn_google_sign_in"
+                android:layout_width="55dp"
+                app:roundedCorner="true"
+                app:iconSize="20dp"
+                android:layout_height="55dp" />
+
+            <com.shaishavgandhi.loginbuttons.TwitterButton
+                android:id="@+id/btn_twitter_sign_in"
+                android:layout_width="55dp"
+                app:roundedCorner="true"
+                app:iconSize="20dp"
+                android:layout_height="55dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_forgot"
+            android:text="Forgot Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Not registered? Register here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

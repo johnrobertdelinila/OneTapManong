@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckListActivity">
+
+    <TextView
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.06"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:textColor="@color/backArrow"
+        android:id="@+id/text_title"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/text_title"
+        android:id="@+id/text_checklist"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:text="Checklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ernestoyaquello.com.verticalstepperform.VerticalStepperFormLayout
+        android:layout_below="@+id/text_checklist"
+        android:id="@+id/vertical_stepper_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

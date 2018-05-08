@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">OneTapManong</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="facebook_app_id">162006424449144</string>
+    <string name="fb_login_protocol_scheme">fb162006424449144</string>
+    <string name="facebook_application_id" translatable="false">162006424449144</string>
+
+    <string name="twitter_consumer_key" translatable="false">hjcenXcNPbPulffhckAWF6FMx</string>
+    <string name="twitter_consumer_secret" translatable="false">GMEuVTamlDPvsDj7eBNkLq1Un2888FGWihuCRruKJywSJAAeFy</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
